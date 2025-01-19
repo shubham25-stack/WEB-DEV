@@ -1,0 +1,17 @@
+h1{
+    color: rgb(50, 47, 0);
+    text-align: center;
+    font-size: large;
+}
+p{
+    color: blueviolet;
+}
+#Article{
+    background-color: green;
+}
+.para{
+    color: rgb(133, 73, 0);
+}
+p,article{
+    width: 500px;
+}

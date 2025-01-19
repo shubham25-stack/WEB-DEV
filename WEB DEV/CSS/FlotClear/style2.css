@@ -1,0 +1,49 @@
+.box{
+    border: 1px solid black;
+    overflow: auto;
+}
+.item{
+    width: 200px;
+    height: 200px;
+    margin: 2px;
+    background-color: aqua;
+    border: 1px solid black;
+    float: left;
+}
+#item1{
+    float: left;
+}
+#item2{
+    float: left;
+}
+#item3{
+    float: right;
+}
+#item4{
+    float: right;
+}
+
+.box2{
+    border: 1px solid black;
+    overflow: auto;
+}
+.image{
+    width: 200px;
+    height: 200px;
+    margin: 2px;
+    background-color: rgb(138, 168, 168);
+    border: 1px solid black;
+    float: left;
+}
+#image1{
+    float: left;
+}
+#image2{
+    float: left;
+}
+#image3{
+    float: right;
+}
+#image4{
+    float: right;
+}
