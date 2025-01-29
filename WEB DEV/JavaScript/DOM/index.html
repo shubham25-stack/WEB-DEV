@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function populateDiv(){
+        const a = document.getElementById("First").value;
+        const b = document.getElementById("Second").value;
+
+        // const element = document.getElementById("finalSum")
+        // element.innerHTML = parseInt(a) + parseInt(b);
+
+        fetch("http://127.0.0.1:5500/WEB%20DEV/JavaScript/DOM/index.html?a=" + a + "&b =" + b)
+            .then(function(response){
+                response/text()
+                    .then(function(ans){
+                        document.getElementById("finalSum").innerHTML = ans;
+                    })
+            });
+
+    } 
+    // async function populateDiv(){
+    //     const a = document.getElementById("First").value;
+    //     const b = document.getElementById("Second").value;
+
+    //     const response = await fetch("http://127.0.0.1:5500/WEB%20DEV/JavaScript/DOM/index.html?a=" + a + "&b =" + b)
+    //     const ans = await response.text();
+    //     document.getElementById("finalSum").innerHTML = ans;
+    // }
+</script>
+<body>
+    <input id="First" type="text" placeholder="First number"></input>
+    </br>
+    <input id="Second" type="text" placeholder="Second number"></input>
+</br>
+    <button onclick="populateDiv()">Calculate sum</button>
+    <div id="finalSum"></div>
+</body>
+</html>
