@@ -6,12 +6,21 @@
     <title>Document</title>
 </head>
 <script>
+    function debouncePopulateDiv(){
+        const timeout = setTimeout(function(){
+            populateDiv()
+        }, 100);
+        // clearTimeout(timeout)
+    }
+
     function populateDiv(){
         const a = document.getElementById("First").value;
         const b = document.getElementById("Second").value;
 
         // const element = document.getElementById("finalSum")
         // element.innerHTML = parseInt(a) + parseInt(b);
+        //clear(timeout)  this will stop the set timeout function
+
 
         fetch("http://127.0.0.1:5500/WEB%20DEV/JavaScript/DOM/index.html?a=" + a + "&b =" + b)
             .then(function(response){
