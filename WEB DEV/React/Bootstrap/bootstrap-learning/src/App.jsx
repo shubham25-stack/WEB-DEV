@@ -1,28 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import AppName from './components/AppName'
+import AddPlan from './components/AddPlan'
+import PlanContent from './components/PlanContent'
+import CurrentTime from './components/CurrentTime'
+import Container from './components/Container'
+import ContainerElements from './components/ContainerElements'
 import './App.css'
 
+
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div>
-      <button type="button" class="btn btn-outline-primary">Primary</button>
-      <button type="button" class="btn btn-outline-secondary">Secondary</button>
-      <button type="button" class="btn btn-outline-success">Success</button>
-      <button type="button" class="btn btn-outline-danger">Danger</button>
-      <button type="button" class="btn btn-outline-warning">Warning</button>
-      <button type="button" class="btn btn-outline-info">Info</button>
-      <button type="button" class="btn btn-outline-light">Light</button>
-      <button type="button" class="btn btn-outline-dark">Dark</button>
+    <>
 
+    <center class='week-container'>
+      <AppName></AppName>
+      <CurrentTime></CurrentTime>
       <div>
-        
+      <AddPlan></AddPlan>      
+      <PlanContent></PlanContent>
       </div>
+    </center>
+
+    <div>
+    <Container></Container>
     </div>
-
+    </>
   )
-}
 
+}
 export default App
