@@ -1,17 +1,29 @@
-function App(){
+import Render from "./components/Render";
+import PushState from "./components/PushState";
+import Memo from "./components/Memo";
+import TodoA from "./components/TodoA";
+import CardWrapper from "./components/CardWrapper";
+import Use from "./components/Use";
 
-  return (
-    <>
-      <Header title="shiv1"></Header>
-      <Header title="shiv2"></Header>
-    </ >
-  )
+function App() {
+    return (
+      <>
+      <CardWrapper></CardWrapper>
+      <br />
+      <br />
+      <Use></Use>
+      </>
+    )
 }
+// {/* <Render></Render>
+//       <br />
+//       <br />
+//       <PushState></PushState>
+//       <br />
+//       <br />
+//       <Memo></Memo>
+//       <br />
+//       <br />
+//       <TodoA></TodoA> */}
 
-function Header({title}){
-  return <div>
-    {title}
-  </div>
-}
-
-export default App
+export default App;
