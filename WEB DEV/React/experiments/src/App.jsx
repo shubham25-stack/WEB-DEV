@@ -4,6 +4,7 @@ import Memo from "./components/Memo";
 import TodoA from "./components/TodoA";
 import CardWrapper from "./components/CardWrapper";
 import Use from "./components/Use";
+import State from "./components/State";
 
 function App() {
     return (
@@ -12,6 +13,8 @@ function App() {
       <br />
       <br />
       <Use></Use>
+      <br />
+      <State></State>
       </>
     )
 }
