@@ -9,6 +9,7 @@ function App() {
   return (
     <>
     <div className='grid grid-cols-3'>
+      Hello People
      <RevenueCard title={"Amount Pending"} amount={"98,324,12"} orderCount={13}></RevenueCard>     
      </div>
     </>
