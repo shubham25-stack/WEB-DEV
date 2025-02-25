@@ -10,6 +10,7 @@ function App() {
     <>
     <div className='grid grid-cols-3'>
       Hello People
+      This is tailwind learning
      <RevenueCard title={"Amount Pending"} amount={"98,324,12"} orderCount={13}></RevenueCard>     
      </div>
     </>
