@@ -1,0 +1,1 @@
+postgresql://shubhamthakur25:ankushthakur@localhost:5432/initialDB
