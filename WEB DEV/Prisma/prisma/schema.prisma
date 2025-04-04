@@ -10,7 +10,7 @@ generator client {
 
 datasource db {
   provider = "postgresql" //shubhamthakur25 insted of prisma
-   url      = "postgresql://shubhamthakur25:ankushthakur@localhost:5432/postgres"
+   url      = "Enter the string here"
 }
 
 model User {
