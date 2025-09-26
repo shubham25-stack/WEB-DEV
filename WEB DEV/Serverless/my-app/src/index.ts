@@ -25,7 +25,7 @@ export default {
 			});
 		} else {
 			return Response.json({
-				message: "You did not send a ger request"
+				message: "You did not send a get request"
 			});
 		}
 	},
