@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "hono": "^4.9.8",
     "mongoose": "^8.9.5"
   }
 }
