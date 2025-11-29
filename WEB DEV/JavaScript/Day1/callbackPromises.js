@@ -39,7 +39,7 @@ function processData(data){
             resolve("Proccessed " + data);
         }, 1000);
     });
-}
+}  //added file
 
 //Using promises to handle the asynchronous operations
 downloadData()
@@ -49,5 +49,6 @@ downloadData()
     })
     .catch(function(error){
         console.error("An error occured: ",error);
+
 
     });
