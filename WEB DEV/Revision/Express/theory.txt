@@ -1,0 +1,12 @@
+we can use express generator for creating the express file structure aur cheezen.
+
+express generator 1 folder bna k deta h hame khud se kuchh banane ki jaroorat nhi h, express generator sare file folder me bna k daal k dega.
+steps to use express generator
+ step-1 jeevan me 1 baar install kro globally
+ npm install express-generator -g
+ step -: to create new app anywhere open cmd move to desktop create new app
+ express appname --view=ejs
+
+ cd appname
+ npm install open it on vs code
+ 
